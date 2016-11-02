@@ -1,9 +1,13 @@
 # Site settings
 
 title: Y4iT
-baseurl: http://toffmendoza.me/sandbox-y4it
-#baseurl: http://y4it.org
 
+baseurl: http://toffmendoza.me/y4it-2016
+#baseurl: http://y4it.org/2016
+
+
+reg: http://reg2016.y4it.org
+cert: http://reg2016.y4it.org/certificates
 
 # Build settings
 markdown: kramdown
@@ -25,8 +29,8 @@ switchTerms: true
 
 switchFooterSitemap: false
 
-urlPackage: "http://y4it.org/y4it2016-sponsorshippackage.pdf"
-urlDeck: "http://y4it.org/y4it2016-deck.pdf"
+urlAppendPackage: "/sponsorship-package.pdf"
+urlAppendDeck: "/sponsorship-deck.pdf"
 urlPartnerConfirmation: "http://y4it.org/isupporty4it"
 
 urlOfficial: "http://y4it.org/"
@@ -47,9 +51,30 @@ speakers:
    professional:
     - designation: "Executive Director"
       company: "Philippine Genome Center"
+      special: "of the"
    description:
     - "Dr. Aguda is a multidisciplinary scientist who started his scientific career as a theoretical-physical chemist investigating the nonlinear dynamics of complex biochemical reaction systems, developing methods for predicting interaction network instabilities and the construction of predictive computational models. For the past 16 years, he has focused the applications of his methods to understanding how certain perturbations of gene & molecular interaction networks could lead to cancer."
     - "The ultimate goal of Dr. Aguda’s research program is the control of gene & molecular networks that are deregulated during malignant transformation.  He advocates the paradigm of network pharmacology that proposes targeting gene networks using combinations of drugs instead of the old one drug-one target strategy. At the Philippine Genome Center, one of the projects of his research group is the creation of network modules databases that serve, in association with novel computer algorithms being created by his group, as in silico platforms to aid in combination drug targets & disease biomarkers discovery."
+   social:
+    - type: ""
+      url: ""
+ - id: "baquino"
+   name:
+    - "Bam"
+    - "Aquino"
+   title: "Sen."
+   image: "Aquino_Bam-edit-web.jpg"
+   professional:
+    - designation: "Senator"
+      company: "Republic of the Philippines"
+      special: "of the"
+   description:
+    - "A world-renowned social entrepreneur turned senator, Sen. Paolo Benigno 'Bam' Aquino IV dedicated his career to empowering the youth and the poor, helping Filipino families improve their lives through education, employment, and entrepreneurship."
+    - "After graduating as class valedictorian and student council president with summa cum laude honors from the Ateneo de Manila University, he became the youngest head of a government agency at age 25 when he was appointed as the Chairperson of the National Youth Commission."
+    - "In 2013, Senator Bam was elected to Congress and has since authored and sponsored 17 laws including the Go Negosyo Act, his first law, and the landmark Philippine Competition Act."
+    - "In support of the youth, he passed, among others, the Youth Entrepreneurship Act and the Sangguniang Kabataan Reform Act."
+    - "Apart from legislation, the neophyte senator utilized the senate’s investigatory powers to fight corruption, promote good governance, improve infrastructure, and enhance living conditions of Filipinos."
+    - "He is currently the chairman of the senate committee on education and hopes to ensure every Filipino is given access to quality education."
    social:
     - type: ""
       url: ""
@@ -66,6 +91,36 @@ speakers:
    social:
     - type: ""
       url: ""
+ - id: "fchua"
+   name:
+    - "Fred"
+    - "Chua"
+   title: "Mr."
+   image: "Chua_Fred-edit-web.jpg"
+   professional:
+    - designation: "President"
+      company: "3D2GO"
+      special: "of"
+   description: "Fred, an Electronics and Communication Engineering Graduate at the University of the Philippines, is the President of My3D Concepts Corp '3D2GO' which is the 1st End-to-End 3D Scanning, Prototyping and Printing Service provider focused on both the mainstream consumer and corporate segments. He’s the Chief Executive Officer of Magellan Solutions Outsourcing, Inc., 600-seat Call Center &amp; BPO Company that was established in 2005. His vision is to democratize the 3D printing industry by offering easy and cost effective services to everyone that needs customized manufacturing, scanning and prototyping services. By democratizing the 3D printing industry, people can truly have whatever they want, instead of choosing from what’s available in the market."
+   social:
+    - type: ""
+      url: ""
+ - id: "mcua"
+   name:
+    - "Matthew"
+    - "Cua"
+   title: "Mr."
+   image: "Cua_Matthew-edit-web.jpg"
+   professional:
+    - designation: "Founder"
+      company: "SkyEye"
+      special: "of"
+   description:
+    - "Matthew is a young innovator who believes that creating sustainable technologies and business models is the key to progress. His background in both business management and science allows him a deeper understanding and a multi-perspective approach towards business process modeling and tech development."
+    - "Matthew thrives and enjoys in places where things are chaotic and where there are more unknowns than known variables. This is reflected in the different work he has taken up since then."
+   social:
+    - type: ""
+      url: ""
  - id: "jdeluzuriaga"
    name:
     - "Jonathan Defensor"
@@ -75,8 +130,10 @@ speakers:
    professional:
     - designation: "President"
       company: "Philippine Software Industry Association (PSIA)"
+      special: "of the"
     - designation: "Founder and Chief Executive Officer"
       company: "CMI Tech"
+      special: "of"
    description: "As the President of the Philippine Software Industry Association, Jonathan leads the way for the Information Technology industry of the Philippines. He is also the Founder and CEO of CMI Tech, a software innovations company involved in developments in web, mobile and cloud solutions for various verticals. Jonathan is a seasoned independent World Bank Consultant for global information technology initiatives responsible for the design and implementation of such projects as the Center of Excellence in IT-BPO for Central Africa, the feasibility study of the Malili Technopark in Kenya as well as a multitude of talent mapping initiatives in Southeast Asia. He has been invited in numerous occasions to lecture about outsourcing and offshoring in various events and conferences in all parts of the world. He is known simply as JDL within the different sectors of business processing, information technology and innovation sectors. He holds a Political Science degree from the De La Salle University."
    social:
     - type: ""
@@ -132,6 +189,7 @@ speakers:
    professional:
     - designation: "Country Manager"
       company: "Jobstreet.com Philippines"
+      special: "of"
    description: "As Jobstreet.com Philippines’s top executive, Philip is responsible for the overall strategy and execution for the company’s online recruitment services in the Philippines. Prior to his installation in his new role earlier this year, he was the company&apos;s Director for Sales, where he managed and grew sales through broad organizational developments, marketing strategies, and leadership. He spearheaded various sales teams to be in a market leading position. Prior to his years in JobStreet.com, he had been a part of the executive committee of the leading multinational insurance company in the country. He graduated with a degree of BS Management in Ateneo de Manila University."
    social:
     - type: ""
@@ -166,9 +224,9 @@ speakers:
       url: ""
  - id: "philario"
    name:
-    - "Paul"
+    - "Paul Leonard"
     - "Hilario"
-   title: "Mr."
+   title: "Dr."
    image: "Hilario_Paul-edit-web.jpg"
    professional:
     - designation: "Instructor and Project Staff"
@@ -189,6 +247,7 @@ speakers:
       company: "Department of Information & Communications Technology"
     - designation: "President"
       company: "UP System IT Foundation, Inc."
+      special: "of the"
    description:
     - "Currently with the Department of Information and Communications Technology (DICT) as Consultant for eInnovation, he served as Commissioner of the former Commission on Information and Communications Technology (CICT) from 2007 until 2011."
     - "In the course of his extensive involvement in the IT industry, he has worked for multinational companies like Fujitsu, WeServ, Siemens-Nixdorf, Comparex Germany and Unisys Australia in various executive positions. During the 2012 International ICT Awards organized by the Canadian Chamber of Commerce of the Philippines, he was given the ICT Individual Contributor Award for his contributions to the growth of the Philippine IT-BPO Industry. He was also recently named as one of the Ten ICT Industry Movers and Shakers for the period 2002-2012 and recipient of the Boards’ Choice as Government Champion, both given by the Contact Center Association of the Philippines (CCAP)."
@@ -243,6 +302,7 @@ speakers:
    professional:
     - designation: "Co-Founder"
       company: "Impact Hub Manila"
+      special: "of"
    description: "In 2010, she won Miss Earth Switzerland and has since become a host and ambassador to many ecological brands in Switzerland. Today, she is a Co-Founder of Impact Hub Manila and an advocate of all things sustainable. She holds a degree in Business Administration (International Management) and had a long career in banking, which started with an apprenticeship for Credit Suisse which eventually garnered her a banking degree. A wanderlust at heart, LizAn took a year off to travel around the world. This experience immersed her in various cultures and exposed her to the realities present in the different parts of the world. Upon her return to Switzerland, she went on to managing her company, where she got exposed to the gamut of setting up/optimizing the business and to overseeing daily operations. LizAn especially loves being able to meet people and continues to learn from everything she’s exposed to. LizAn is multi-lingual communicator (4 languages) and is half Filipina, half Swiss."
    social:
     - type: ""
@@ -273,18 +333,18 @@ speakers:
    social:
     - type: ""
       url: ""
- - id: "gpadillaconcepcion"
+ - id: "ppaje"
    name:
-    - "Gisela"
-    - "Padilla-Concepcion"
-   title: "Dr."
-   image: "Concepcion_Gisela-edit-web.jpg"
+    - "Paulo Noel"
+    - "Paje"
+   title: "Mr."
+   image: "Paje_Paulo-edit-web.jpg"
    professional:
-    - designation: "Vice-President for Academic Affairs"
-      company: "University of the Philippines"
+    - designation: "Director"
+      company: "UP Information Technology Development Center"
+      special: "of the"
    description:
-    - "Vice-President Padilla-Concepcion is not only known for her expertise in marine natural products research, and the biomolecular and biomedical sciences, but also for her science advocacies. She is also considered as a champion of voluntarism and is very active in the campaign to increase awareness of the importance of S&T and R&D to socio-economic development."
-    - "For her various efforts in scientific research and in the promotion of the sciences, for her studies on bioactive compounds from marine organisms and the appreciation and protection of marine life, Padilla-Concepcion was chosen as the 2013 Philippine Federation of Chemical Societies Awardee for Chemical Research, the 2010 honoree for Outstanding Achievement in Science and Technology of the Philippine Development (Ayala) Foundation USA. She also received the 2007 National Research Council of the Philippines (NRCP) Achievement Award in Chemistry; the 2006 Gregorio Y. Zara Award for Basic Research; the 2006 NAST-LELEDFI Award for Outstanding Research in Tropical Medicine; the 2005 Philippine Society for Biochemistry and Molecular Biology (PSBMB) Research Award, and the 2002 Dr. Eusebio Y. Garcia Recognition Award for Molecular Biology & Molecular Pathology by the NRCP."
+    - "Mr. Paje has more than fifteen (15) years of solid experience and expertise in the fields of I.T. management, I.T. operations, information systems planning, systems implementation and business re-engineering. In his nine (9) years of holding the top I.T. position, he has harnessed and transformed IT teams into competitive assets of the company- moving the IT organizations from cost centers to revenue-generating centers. In 1995, Mr. Paje has earned his bachelor’s degree in computer science from the University of the Philippines Los Banos and in 1999, he completed his master’s degree in technology management (MTM) at the University of the Philippines Diliman. Mr. Paje is currently the Director of the U.P. Information Technology Development Center. He is also a Senior Lecturer at the U.P. School of Business and U.P. Technology Management Center."
    social:
     - type: ""
       url: ""
@@ -301,16 +361,31 @@ speakers:
    social:
     - type: ""
       url: ""
- - id: "psmithson"
+ - id: "psymanalang"
    name:
-    - "Phil"
-    - "Smithson"
-   title: "Mr."
-   image: "Smithson_Phil1-edit-web.jpg"
+    - "Pebbles"
+    - "Sy-Manalang"
+   title: "Ms."
+   image: "Sy-Manalang_Pebbles-edit-web.jpg"
    professional:
-    - designation: "Lead Service Designer and Director"
-      company: "On-Off Group"
-   description: "Phil is a Lead Service Designer and Director of On-Off Group. He's been helping companies design experiences for over 10 years and has taught UX to over 1,500 people. In 2015, he spent 3 months travelling the Philippines introducing UX to multiple universities. He finds it difficult to switch off the 'designer' part of his brain and is always thinking about how to improve experiences wherever he goes."
+    - designation: "Chief Information Officer"
+      company: "Globe Telecom"
+   description: "Pebbles is the Chief Information Officer of Globe Telecom, the number one mobile brand in the Philippines and the purveyor of the Filipino digital lifestyle. She has more than 20 years of experience in the Information and Telecommunications industry, with expertise in project management, platform management, software and product development, as well as training and education. Pebbles has been with Globe close to 14 years and has been instrumental in many of Globe’s successes, including the standardization of the product design and delivery process; through her guidance, the Product Management division evolved into an enterprise resource, driving better synergies within and across the organization. Apart from her relentless drive to shape the future of digital in the Philippines, she also champions innovation in Globe and a firm believer of driving innovation from within. Her strength lies in her passion to create a great company culture that naturally drives wonderful experiences."
+   social:
+    - type: ""
+      url: ""
+ - id: "cty"
+   name:
+    - "Charles Patrick"
+    - "Ty"
+   title: "Mr."
+   image: "Ty_Charles-edit-web.jpg"
+   professional:
+    - designation: "Business Development Manager"
+      company: "Intel Philippines"
+   description:
+    - "Charles is the Business Development Manager for Intel Philippines. His charter is to accelerate the deployment of the Intel® based platforms for cloud computing, high performance computing, network function virtualization and big data; and to drive adoption through working closely with the industry ecosystem. In addition, Charles is also responsible for development of Intel® based IOT Solutions for Retail, Industrial, Healthcare and other Verticals in the Philippines. Prior to joining Intel, Charles was Category Manager for Hewlett-Packard enterprise, He was responsible for growing the Data storage business across Southeast Asia, Hong Kong and Taiwan."
+    - "Charles has over 10 years working experience in the industry and holds a Bachelor of Arts degree with a major in Economics from the Ateneo de Manila University."
    social:
     - type: ""
       url: ""
@@ -323,6 +398,7 @@ speakers:
    professional:
     - designation: "Founder and CEO"
       company: "Lamudi Philippines"
+      special: "of"
    description: "Jacqueline is a founder and currently the managing director of Lamudi Philippines. Prior to that, she worked 3 years as an investment professional in a leading private equity firm. Prior to her career at HAL Investments, Jacqueline founded a non-profit company which now employs over 100 students in three countries. She is passionate about creating companies from scratch and building high performance teams of talented individuals. Her strength lies in the combination of an analytic background, with strong communication skills, passionate entrepreneurial drive and the ability to create a great company culture."
    social:
     - type: ""
@@ -373,31 +449,57 @@ speakersLegacy:
    social:
     - type: ""
       url: ""
- - id: "ppaje"
+ - id: "jfernandez"
    name:
-    - "Paulo"
-    - "Paje"
+    - "Jayvee"
+    - "Fernandez"
    title: "Mr."
-   image: "Paje_Paulo-edit-web.jpg"
+   image: "Fernandez_Jayvee-edit-web.jpg"
    professional:
-    - designation: "Director"
-      company: "UP Information Technology Development Center"
+    - designation: "Product Evangelist"
+      company: "Unity Technologies"
    description: ""
    social:
     - type: ""
       url: ""
- - id: "cty"
+ - id: "gpadillaconcepcion"
    name:
-    - "Charles Patrick"
-    - "Ty"
-   title: "Mr."
-   image: "Ty_Charles-edit-web.jpg"
+    - "Gisela"
+    - "Padilla-Concepcion"
+   title: "Dr."
+   image: "Concepcion_Gisela-edit-web.jpg"
    professional:
-    - designation: "Business Development Manager"
-      company: "Intel Philippines"
+    - designation: "Vice-President for Academic Affairs"
+      company: "University of the Philippines"
    description:
-    - "Charles is the Business Development Manager for Intel Philippines. His charter is to accelerate the deployment of the Intel® based platforms for cloud computing, high performance computing, network function virtualization and big data; and to drive adoption through working closely with the industry ecosystem. In addition, Charles is also responsible for development of Intel® based IOT Solutions for Retail, Industrial, Healthcare and other Verticals in the Philippines. Prior to joining Intel, Charles was Category Manager for Hewlett-Packard enterprise, He was responsible for growing the Data storage business across Southeast Asia, Hong Kong and Taiwan."
-    - "Charles has over 10 years working experience in the industry and holds a Bachelor of Arts degree with a major in Economics from the Ateneo de Manila University."
+    - "Vice-President Padilla-Concepcion is not only known for her expertise in marine natural products research, and the biomolecular and biomedical sciences, but also for her science advocacies. She is also considered as a champion of voluntarism and is very active in the campaign to increase awareness of the importance of S&T and R&D to socio-economic development."
+    - "For her various efforts in scientific research and in the promotion of the sciences, for her studies on bioactive compounds from marine organisms and the appreciation and protection of marine life, Padilla-Concepcion was chosen as the 2013 Philippine Federation of Chemical Societies Awardee for Chemical Research, the 2010 honoree for Outstanding Achievement in Science and Technology of the Philippine Development (Ayala) Foundation USA. She also received the 2007 National Research Council of the Philippines (NRCP) Achievement Award in Chemistry; the 2006 Gregorio Y. Zara Award for Basic Research; the 2006 NAST-LELEDFI Award for Outstanding Research in Tropical Medicine; the 2005 Philippine Society for Biochemistry and Molecular Biology (PSBMB) Research Award, and the 2002 Dr. Eusebio Y. Garcia Recognition Award for Molecular Biology & Molecular Pathology by the NRCP."
+   social:
+    - type: ""
+      url: ""
+ - id: "rscammell"
+   name:
+    - "Rustum"
+    - "Scammell"
+   title: "Mr."
+   image: "Scammell_Rustum-edit-web.jpg"
+   professional:
+    - designation: "Product Evangelist"
+      company: "Unity Technologies"
+   description: ""
+   social:
+    - type: ""
+      url: ""
+ - id: "psmithson"
+   name:
+    - "Phil"
+    - "Smithson"
+   title: "Mr."
+   image: "Smithson_Phil1-edit-web.jpg"
+   professional:
+    - designation: "Lead Service Designer and Director"
+      company: "On-Off Group"
+   description: "Phil is a Lead Service Designer and Director of On-Off Group. He's been helping companies design experiences for over 10 years and has taught UX to over 1,500 people. In 2015, he spent 3 months travelling the Philippines introducing UX to multiple universities. He finds it difficult to switch off the 'designer' part of his brain and is always thinking about how to improve experiences wherever he goes."
    social:
     - type: ""
       url: ""
@@ -409,16 +511,18 @@ schedules:
  - morning:
     - id: "jdeluzuriaga"
       topic: "Welcome Address"
-    - id: "keynote"
+    - id: "baquino"
       topic: "Keynote Speech"
     - id: "pgioca"
-      topic: "Tech Talk"
+      topic: "Jobstreet.com"
     - id: "psmithson"
       topic: "Human Centered Design"
     - id: "dhaas"
       topic: "Think Big, Start Small, Grow Fast - Working with Industry for ‘Work Ready’ Students"
     - id: "mmirandillasantos"
       topic: "PH Broadband: Current State and The Way Forward"
+    - id: "psymanalang"
+      topic: "Globe: The Road to a Digital Philippines"
    afternoon:
     - id: "jjensen"
       topic: "14 Million Infographics Later, Here Are 24 Ideas For Your Inspiration"
@@ -426,46 +530,58 @@ schedules:
       topic: "Youth, Diversity and Women in Technology"
     - id: "jchen"
       topic: "Digital Citizenship to Connect the Unconnected"
+    - id: "rscammell"
+      topic: "Unity and You - Game Development for Everyone"
  - morning:
-    - id: "gpadillaconcepcion"
-      topic: "Welcome Address"
     - id: ""
-      topic: "Keynote Speech"
+      topic: "Welcome Address"
+    - id: "ppaje"
+      topic: "Tech Talk"
     - id: "hduh"
       topic: "Next Generation User Interface: Virtual and Augmented Reality"
-    - id: ""
-      topic: "Tech Talk"
+    - id: "fchua"
+      topic: "An Overview of the 3D Printing Revolution"
     - id: "jjanssens"
       topic: "Captains of Spaceship Earth - An Exploration of Technology, Philippines, and… YOU(th)!"
-    - id: ""
+    - id: "" #uhg
       topic: "Tech Talk"
+    - id: "kmelquiades"
+      topic: "Using Data Science to Revolutionize Financial Services"
    afternoon:
     - id: "ipatdu"
-      topic: "What Data Privacy Act means to IT"
+      topic: "What Data Privacy Act Means for IT"
     - id: "jvandenende"
       topic: "Leading through Technology"
     - id: "kjones"
       topic: "How to Prepare for the 4th Industrial Revolution"
+    - id: "jfernandez"
+      topic: "Tech Talk"
  - morning:
     - id: "mibrahim"
       topic: "Welcome Address"
-    - id: ""
-      topic: "Keynote Speech"
+    - id: "philario"
+      topic: "Space IT: The Journey, Challenges and Future of Diwata"
     - id: "mwarren"
       topic: "Global Opportunities for Digital Entrepreneurs"
     - id: "lkuster"
-      topic: "Impact Entrepreneurship"
-    - id: ""
+      topic: "Impact Entrepreneurship 1/2"
+    - id: "mcua"
+      topic: "Impact Entrepreneurship 2/2"
+    - id: "cty"
+      topic: "IOT: Disruptive Transformation"
+    - id: "" #accenture
       topic: "Tech Talk"
     - id: "hduh"
       topic: "Tech Talk"
    afternoon:
     - id: "baguda"
       topic: "The Philippine Genome Center and IT"
-    - id: "adumanhug"
-      topic: "CyberSecurity: Bug Bounty Program"
+    - id: "gvillorente"
+      topic: "Why Should We Hire You"
     - id: "adelacruz"
       topic: "CATCH-PATCH-MATCH: 4-Things you need to DO to Protect Yourself from 85% of Cyber Security Threats"
+    - id: "adumanhug"
+      topic: "CyberSecurity: Bug Bounty Program"
 
 
 parallels:
@@ -517,6 +633,12 @@ parallels:
 
 
 sponsors:
+ - id: "3d2go"
+   name: "3D2Go"
+   logo: "logo_sponsor-3d2go.png"
+ - id: "accenture"
+   name: "Accenture"
+   logo: "logo_sponsor-accenture.png"
  - id: "cdu"
    name: "Cosmic Digital Universe"
    logo: "logo_sponsor-cdu.png"
@@ -532,12 +654,21 @@ sponsors:
  - id: "intel"
    name: "Intel"
    logo: "logo_sponsor-intel.png"
+ - id: "itcareerph"
+   name: "ITCareer.ph"
+   logo: "logo_sponsor-itcareerph.png"
+ - id: "jec"
+   name: "Jellyfish Education Consultancy"
+   logo: "logo_sponsor-jec.png"
  - id: "jobstreet"
    name: "Jobstreet"
    logo: "logo_sponsor-jobstreet.png"
  - id: "lamudi"
    name: "Lamudi"
    logo: "logo_sponsor-lamudi.png"
+ - id: "lazada"
+   name: "Lazada"
+   logo: "logo_sponsor-lazada.png"
  - id: "lesliescheezy"
    name: "Leslie's Cheezy"
    logo: "logo_sponsor-lesliescheezy.png"
@@ -553,6 +684,9 @@ sponsors:
  - id: "payoneer"
    name: "Payoneer"
    logo: "logo_sponsor-payoneer.png"
+ - id: "pgc"
+   name: "Philippine Genome Center"
+   logo: "logo_sponsor-pgc.png"
  - id: "piktochart"
    name: "Piktochart"
    logo: "logo_sponsor-piktochart.png"
@@ -562,8 +696,11 @@ sponsors:
  - id: "teradoor"
    name: "Teradoor"
    logo: "logo_sponsor-teradoor.png"
+ - id: "uhg"
+   name: "United Health Group"
+   logo: "logo_sponsor-uhg.png"
  - id: "unity"
-   name: "Unity"
+   name: "Unity Technologies"
    logo: "logo_sponsor-unity.png"
 
 
@@ -587,6 +724,9 @@ media:
  - id: "manilatimes"
    name: "The Manila Times"
    logo: "logo_media-manilatimes.png"
+ - id: "mellow"
+   name: "Mellow 94.7"
+   logo: "logo_media-mellow.png"
  - id: "pcbuyers"
    name: "PC Buyer's Guide"
    logo: "logo_media-pcbuyers.png"

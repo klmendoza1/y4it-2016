@@ -2,6 +2,19 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/js/smoothscroll.js"></script>
 
+{% if page.thanks %}
+<script type="text/javascript" src="{{ site.baseurl }}/js/flipclock.min.js"></script>
+<script>
+  var date = new Date(2017, 9, 6);
+  var now = new Date();
+  var diff = (date.getTime()/1000) - (now.getTime()/1000);
+
+  var clock = $('.your-clock').FlipClock(diff,{
+      clockFace: 'DailyCounter',
+      countdown: true
+  });
+</script>
+{% endif %}
 
 {% if page.home %}
 <script>

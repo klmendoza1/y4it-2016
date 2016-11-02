@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: main-2016
 home: true
 parallax: true
 parallaxLarge: /images/art-landscape-web.png
@@ -163,9 +163,9 @@ animate: true
           <div></div>
 
         </div>
-        <div class="col-lg-12">
+        <!--div class="col-lg-12">
           <span class="span-copy" style="margin-top:30px">...and many more coming up!</span>
-        </div>
+        </div-->
       </div>
 
     </div>
@@ -217,8 +217,8 @@ animate: true
                     Gates open at 7am <br/>
                     Event proper: 9am - 4pm || Break: 12nn - 1pm <br/>
                   </span>
-                  <a class="btn btn-default btn-block-xs btn-white-on-violet" role="button" href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#badges">Get badges</a>
-                  <a class="btn btn-default btn-block-xs btn-orange" role="button" href="http://reg2016.y4it.org" target="_blank" rel="noopener noreferrer">Register</a>
+                  <a class="btn btn-default btn-block-xs btn-white-on-violet" role="button" href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#badges">Badges</a>
+                  <!--a class="btn btn-default btn-block-xs btn-orange" role="button" href="{{ site.reg }}" target="_blank" rel="noopener noreferrer">Register</a-->
                 </div>
               </div>
             </div>
@@ -273,7 +273,7 @@ animate: true
                       <section>
                         <ol class="list-unstyled list-schedule">
                           {% for eachtalk in eachschedule.morning %}
-                          {% if forloop.index == 3 %}
+                          {% if eachtalk.topic != "Welcome Address" and eachtalk.topic != "Keynote Speech" %}
                           {% break %}
                           {% else %}
                           {% include item-talk-lean.html %}
@@ -287,11 +287,13 @@ animate: true
                         <ol class="list-unstyled list-schedule">
                           {% for eachspeaker in site.speakers %}
                           {% for eachtalk in eachschedule.morning %}
+
                           {% if eachspeaker.id == eachtalk.id %}
                           {% if eachtalk.topic != "Welcome Address" and eachtalk.topic != "Keynote Speech" %}
                           {% include item-talk-lean.html %}
                           {% endif %}
                           {% endif %}
+
                           {% endfor %}
                           {% for eachtalk in eachschedule.afternoon %}
                           {% if eachspeaker.id == eachtalk.id %}
@@ -308,7 +310,7 @@ animate: true
                     {% endif %}
 
                     {% if forloop.index == 2 %}
-                    <a class="" id="y66zys6m" target="_blank" rel="noopener noreferrer" href="http://y4it.org/lgknq2mt.png">
+                    <a class="" id="y66zys6m" target="_blank" rel="noopener noreferrer" href="{{ site.baseurl }}/lgknq2mt.png">
                       <div class="bar bar-lg-left"></div>
                     </a>
                     {% else %}
@@ -341,8 +343,8 @@ animate: true
                     Gates open at 7am <br/>
                     Event proper: 9am - 4pm || Break: 12nn - 1pm <br/>
                   </span>
-                  <a class="btn btn-default btn-block-xs btn-white-on-violet" role="button" href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#badges">Get badges</a>
-                  <a class="btn btn-default btn-block-xs btn-orange" role="button" href="http://reg2016.y4it.org" target="_blank" rel="noopener noreferrer">Register</a>
+                  <!--a class="btn btn-default btn-block-xs btn-white-on-violet" role="button" href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#badges">Get badges</a>
+                  <a class="btn btn-default btn-block-xs btn-orange" role="button" href="{{ site.reg }}" target="_blank" rel="noopener noreferrer">Register</a-->
                 </div>
               </div>
             </div>
@@ -454,7 +456,7 @@ animate: true
             <div class="row">
               <div class="col-lg-12 text-center">
                 <h2>Early Bird Rate
-                  <small>until August 15, 2016</small>
+                  <small>until August 31, 2016</small>
                 </h2>
                 <span class="span-price"><span>&#8369;</span>600</span>
               </div>
@@ -464,7 +466,7 @@ animate: true
             <div class="row">
               <div class="col-lg-12 text-center">
                 <h2>Regular Rate
-                  <small>August 16 to September 26, 2016</small>
+                  <small>August 31 to September 26, 2016</small>
                 </h2>
                 <div class="row">
                   <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
@@ -519,7 +521,7 @@ animate: true
             <div class="item-inclusion">
 
               {% if forloop.rindex == 1 %}
-              <h2 class="center-xs"><a placeholder="" id="vp2gdpm6" target="_blank" rel="noopener noreferrer" href="http://y4it.org/29xi6phi.png">Certificate</a></h2>
+              <h2 class="center-xs"><a placeholder="" id="vp2gdpm6" target="_blank" rel="noopener noreferrer" href="{{ site.baseurl }}/29xi6phi.png">Certificate</a></h2>
               {% else %}
               <h2 class="center-xs">{{ eachinclusion.name }}</h2>
               {% endif %}
@@ -546,9 +548,9 @@ animate: true
 
           <h1 class="h1-title">Registration</h1>
 
-          <p class="text-center">
-            <a id="btn-register" class="btn btn-default btn-block-xs btn-lg btn-white-on-orange" role="button" href="http://reg2016.y4it.org" target="_blank" rel="noopener noreferrer">Register <br class="visible-xs"/>and Get <br class="visible-xs"/>Badges</a><br/>
-          </p>
+          <!--p class="text-center">
+            <a id="btn-register" class="btn btn-default btn-block-xs btn-lg btn-white-on-orange" role="button" href="{{ site.reg }}" target="_blank" rel="noopener noreferrer">Register <br class="visible-xs"/>and Get <br class="visible-xs"/>Badges</a><br/>
+          </p-->
 
           <div class="row">
             <div class="col-lg-12">

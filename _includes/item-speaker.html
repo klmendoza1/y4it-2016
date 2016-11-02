@@ -5,10 +5,10 @@
       <img class="img-responsive img-circle img-speaker" src="{{ site.baseurl }}/images/speakers/{{ eachspeaker.image }}" style="">
       </a>
       <h4>
-        {% for eachname in eachspeaker.name %}{{ eachname }}{% if forloop.last == false %} {% endif %}{% endfor %}{% if eachspeaker.special %}{% for eachspecial in eachspeaker.special %}<a{% if eachspeaker.id == "hduh" %} href="http://dsp.acm.org/view_lecturer.cfm?lecturer_id=6123" target="_blank" rel="noopener noreferrer" {% endif %}><span class="span-special" title="{{ eachspecial.title }}" alt="{{ eachspecial.title }}">{{ eachspecial.display }}</span></a>{% endfor %}{% endif %}<br/>
+        {% if eachspeaker.title == "Sen." %}{{ eachspeaker.title }}{% endif %} {% for eachname in eachspeaker.name %}{{ eachname }}{% if forloop.last == false %} {% endif %}{% endfor %}{% if eachspeaker.special %}{% for eachspecial in eachspeaker.special %}<a{% if eachspeaker.id == "hduh" %} href="http://dsp.acm.org/view_lecturer.cfm?lecturer_id=6123" target="_blank" rel="noopener noreferrer" {% endif %}><span class="span-special" title="{{ eachspecial.title }}" alt="{{ eachspecial.title }}">{{ eachspecial.display }}</span></a>{% endfor %}{% endif %}<br/>
         <small>
           {% for eachprofessional in eachspeaker.professional %}
-          {{ eachprofessional.designation }} at {{ eachprofessional.company }}
+          {{ eachprofessional.designation }} {% if eachprofessional.special %}{{ eachprofessional.special }}{% else %}at{% endif %} {{ eachprofessional.company }}
           {% break %}
           {% endfor %}
         </small>
@@ -25,10 +25,10 @@
         <div class="col-lg-12">
 
           <h4 class="hidden-xs">
-            <span class="span-speaker">{% for eachname in eachspeaker.name %}{{ eachname }}{% if forloop.last == false %} {% endif %}{% endfor %}</span>
+            <span class="span-speaker">{% if eachspeaker.title == "Sen." %}{{ eachspeaker.title }}{% endif %} {% for eachname in eachspeaker.name %}{{ eachname }}{% if forloop.last == false %} {% endif %}{% endfor %}</span>
             <small class="span-company">
               {% for eachprofessional in eachspeaker.professional %}
-              {{ eachprofessional.designation }} at {{ eachprofessional.company }}
+              {{ eachprofessional.designation }} {% if eachprofessional.special %}{{ eachprofessional.special }}{% else %}at{% endif %} {{ eachprofessional.company }}
               {% if forloop.last != true %}<br/>{% endif %}
               {% endfor %}
 
