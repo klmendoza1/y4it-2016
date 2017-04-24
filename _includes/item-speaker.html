@@ -5,7 +5,7 @@
       <img class="img-responsive img-circle img-speaker" src="{{ site.baseurl }}/images/speakers/{{ eachspeaker.image }}" style="">
       </a>
       <h4>
-        {% if eachspeaker.title == "Sen." %}{{ eachspeaker.title }}{% endif %} {% for eachname in eachspeaker.name %}{{ eachname }}{% if forloop.last == false %} {% endif %}{% endfor %}{% if eachspeaker.special %}{% for eachspecial in eachspeaker.special %}<a{% if eachspeaker.id == "hduh" %} href="http://dsp.acm.org/view_lecturer.cfm?lecturer_id=6123" target="_blank" rel="noopener noreferrer" {% endif %}><span class="span-special" title="{{ eachspecial.title }}" alt="{{ eachspecial.title }}">{{ eachspecial.display }}</span></a>{% endfor %}{% endif %}<br/>
+        {% if eachspeaker.title == "Sen." %}{{ eachspeaker.title }}{% endif %} {% for eachname in eachspeaker.name %}{{ eachname }}{% if forloop.last == false %}&nbsp;{% endif %}{% endfor %}{% if eachspeaker.special %}{% for eachspecial in eachspeaker.special %}<a{% if eachspeaker.id == "hduh" %} href="http://dsp.acm.org/view_lecturer.cfm?lecturer_id=6123" target="_blank" rel="noopener noreferrer" {% endif %}><span class="span-special" title="{{ eachspecial.title }}" alt="{{ eachspecial.title }}">{{ eachspecial.display }}</span></a>{% endfor %}{% endif %}<br/>
         <small>
           {% for eachprofessional in eachspeaker.professional %}
           {{ eachprofessional.designation }} {% if eachprofessional.special %}{{ eachprofessional.special }}{% else %}at{% endif %} {{ eachprofessional.company }}
